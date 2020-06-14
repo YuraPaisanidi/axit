@@ -7,6 +7,15 @@ body
 // img
 // 	max-width: 100%
 // 	width: 100%
+.title
+	font-family: Raleway, sans-serif
+	text-transform: uppercase
+	color: #212121
+	font-size: 36px
+	font-weight: 500
+
+	+r(992)
+		font-size: 32px
 
 .container
 	width: 100%
@@ -30,6 +39,9 @@ body
 	padding-top: 20px
 	padding-bottom: 20px
 	z-index: 9999
+
+	+r(992)
+		max-width: 992px
 
 	&__container
 		+between
@@ -89,17 +101,15 @@ body
 			display: flex
 			flex-direction: column
 			align-items: center
-			
-
-
-
-// .main
-// 	+cover
 
 .top
 	padding-top: 180px
 	padding-bottom: 140px
 	background-color: #9a9a9a
+
+	+r(992)
+		padding-top: 120px
+		padding-bottom: 70px
 
 	&__wrapper
 		display: flex
@@ -115,12 +125,18 @@ body
 		height: auto
 		margin-bottom: 35px
 
+		+r(992)
+			width: 120px
+
 	&__title
 		color: #ffffff
 		text-transform: uppercase
 		font-size: 36px
 		font-weight: 400
 		margin-bottom: 40px
+
+		+r(992)
+			font-size: 28px	
 
 		&::after
 			display: block
@@ -131,10 +147,16 @@ body
 			box-shadow: 0 0 10px rgba(0,0,0,0.8)
 			margin-top: 40px
 
+			+r(992)
+				width: 55px
+
 	&__text
 		font-size: 16px
 		color: #ffffff
 		margin-bottom: 45px
+
+		+r(992)
+			font-size: 14px
 	
 	&__button
 		display: flex
@@ -177,6 +199,9 @@ body
 				font-size: 20px
 				font-weight: 700
 
+				+r(992)
+					font-size: 16px
+
 			span 
 				color: #ff9b51
 
@@ -213,6 +238,10 @@ body
 	position: relative
 	z-index: 5
 
+	+r(992)
+		padding-top: 15px
+		padding-bottom: 15px
+
 	&__wrapper
 		display: flex
 		flex-direction: row
@@ -228,10 +257,16 @@ body
 			color: #333333
 			font-size: 20px
 			font-weight: 700
+
+			+r(992)
+				font-size: 14px
 		
 		&_message
 			color: #86878b
 			font-size: 14px
+
+			+r(992)
+				font-size: 12px
 
 	&__icons
 		width: 635/1090*100%
@@ -242,6 +277,9 @@ body
 
 		&_link
 
+			+r(992)
+				transform: scale(0.75)
+
 			&:hover
 				transform: scale(1.03)
 				transition: all 0.5s
@@ -250,6 +288,10 @@ body
 	padding-top: 145px
 	padding-bottom: 115px
 	background-color: #f5f5f5
+
+	+r(992)
+		padding-top: 40px
+		padding-bottom: 40px
 
 	&__wrapper
 		display: flex
@@ -265,12 +307,22 @@ body
 		width: 690/1120*100%
 		height: 335px
 
+	&__right
+		width: 320/1120*100%
+	
+		img 
+			width: 100%
+
 	&__buttons
 		display: flex
 		flex-direction: column
 		align-items: center
 		height: 333px
 		width: 110px
+
+		+r(992)
+			width: 75px
+			height: 228px
 
 		
 
@@ -290,6 +342,9 @@ body
 		background-color: #333333
 		color: #ffffff
 		text-transform: uppercase
+
+		+r(992)
+			height: 75px
 
 		&:hover
 			color: #ffffff
@@ -318,6 +373,10 @@ body
 		flex-direction: column
 		justify-content: space-between
 
+		+r(992)
+			height: 228px
+			padding-bottom: 15px
+
 			
 
 	&__content-title
@@ -325,9 +384,15 @@ body
 		font-weight: 700
 		color: #000000
 
+		+r(992)
+			font-size: 16px
+
 	&__content-text
-		font-size: 14xp
+		font-size: 14px
 		color: #86878b
+
+		+r(992)
+			font-size: 12px
 
 	&__content-button
 		width: 120px
@@ -341,6 +406,11 @@ body
 		font-weight: 600
 		border-radius: 5px
 
+		+r(992)
+			width: 90px
+			height: 35px
+			font-size: 12px
+
 		&:hover
 			background-color: darken(#ff9b51,7.5%)
 			color: #ffffff
@@ -348,6 +418,10 @@ body
 .sublist
 	padding-top: 110px
 	padding-bottom: 135px
+
+	+r(992)
+		padding-top: 50px
+		padding-bottom: 40px
 
 	&__wrapper
 		display: flex
@@ -357,6 +431,10 @@ body
 
 	&__picture
 		box-shadow: 0px 10px 15px rgba(0,0,0,0.5)
+		width: 450/1090*100%
+
+		img 
+			width: 100%
 
 	&__text-block
 		width: 435/1090*100%
@@ -367,10 +445,16 @@ body
 		&_main
 			margin-bottom: 50px
 
+			+r(992)
+				margin-bottom: 20px
+
 		&_title
 			color: #212121
 			font-size: 20px
 			font-weight: 700
+
+			+r(992)
+				font-size: 16px
 
 			&::after
 				display: block
@@ -384,6 +468,9 @@ body
 			color: #86878b
 			font-size: 14px
 
+			+r(992)
+				font-size: 12px
+
 		&_list
 			display: flex
 			flex-direction: column
@@ -394,13 +481,23 @@ body
 			align-items: center
 			justify-content: space-between
 
+			img 
+				+r(992)
+					width: 30px
+
 			&:first-child
 				margin-bottom: 45px
+
+				+r(992)
+				margin-bottom: 20px
 
 		&_column
 			width: 365/435*100%
 			display: flex
 			flex-direction: column
+
+			+r(992)
+
 
 		&_item-title
 			color: #212121
@@ -408,14 +505,25 @@ body
 			font-weight: 600
 			margin-bottom: 15px 
 
+			+r(992)
+				font-size: 12px
+				margin-bottom: 7px
+
 		&_item-text
 			color: #86878b
 			font-size: 14px
+
+			+r(992)
+				font-size: 12px
 	
 .standart
 	padding-top: 90px
 	padding-bottom: 130px
 	background-color: #f5f5f5
+
+	+r(992)
+		padding-top: 45px
+		padding-bottom: 40px
 
 	&__wrapper
 		display: flex
@@ -431,6 +539,9 @@ body
 		font-weight: 700
 		color: #000000
 
+		+r(992)
+				font-size: 16px
+
 		&::after
 			display: block
 			content: ""
@@ -443,12 +554,23 @@ body
 		font-size: 14xp
 		color: #86878b
 
+		+r(992)
+				font-size: 12px
+
 	&__picture
 		box-shadow: 0px 10px 15px rgba(0,0,0,0.5)
+		width: 450/1090*100%
+
+		img 
+			width: 100%
 
 .awesome	
 	padding-top: 110px
 	padding-bottom: 105px
+
+	+r(992)
+		padding-top: 50px
+		padding-bottom: 50px
 
 	&__wrapper
 		display: flex
@@ -457,11 +579,6 @@ body
 		align-items: center
 
 	&__title
-		font-family: Raleway, sans-serif
-		text-transform: uppercase
-		color: #212121
-		font-size: 36px
-		font-weight: 500
 
 		&::after
 			display: block
@@ -473,10 +590,16 @@ body
 			margin-top: 30px
 			margin-bottom: 30px
 
+			+r(992)
+				left: 155px
+
 	&__subtitle
 		color: #86878b
 		font-size: 14px
 		margin-bottom: 80px
+
+		+r(992)
+			margin-bottom: 40px
 
 	&__advantages
 		display: flex
@@ -489,13 +612,22 @@ body
 			align-items: center
 			justify-content: space-between
 			width: 350/1090*100%
+				
 
 		&_icon
 			margin-bottom: 30px
 
+			+r(992)
+				width: 60px
+				margin-bottom: 20px
+
 		&_title
 			color: #333333
 			margin-bottom: 30px
+
+			+r(992)
+				font-size: 18px
+				margin-bottom: 20px
 
 		&_text
 			color: #86878b
@@ -507,18 +639,17 @@ body
 	padding-bottom: 95px
 	background-color: #f5f5f5
 
+	+r(992)
+		padding-top: 50px
+		padding-bottom: 40px
+
 	&__wrapper
 		display: flex
 		align-items: center
 		justify-content: space-between
 		flex-direction: column
 
-	&__title
-		font-family: Raleway, sans-serif
-		text-transform: uppercase
-		color: #212121
-		font-size: 36px
-		font-weight: 500	
+	&__title	
 
 		&::after
 			display: block
@@ -530,10 +661,16 @@ body
 			margin-top: 30px
 			margin-bottom: 30px
 
+			+r(992)
+				left: 110px
+
 	&__subtitle
 		color: #86878b
 		font-size: 14px
 		margin-bottom: 80px
+
+		+r(992)
+			margin-bottom: 40px
 
 	&__items
 		display: flex
@@ -627,6 +764,10 @@ body
 	padding-top: 105px
 	padding-bottom: 105px
 
+	+r(992)
+		padding-top: 50px
+		padding-bottom: 50px
+
 	&__wrapper
 		display: flex
 		align-items: center
@@ -634,11 +775,6 @@ body
 		flex-direction: column
 
 	&__title
-		font-family: Raleway, sans-serif
-		text-transform: uppercase
-		color: #212121
-		font-size: 36px
-		font-weight: 500	
 
 		&::after
 			display: block
@@ -650,10 +786,16 @@ body
 			margin-top: 30px
 			margin-bottom: 30px
 
+			+r(992)
+				left: 250px
+
 	&__subtitle
 		color: #86878b
 		font-size: 14px
 		margin-bottom: 80px
+
+		+r(992)
+			margin-bottom: 40px
 
 	&__items
 		display: flex
@@ -709,6 +851,10 @@ body
 	padding-bottom: 65px
 	background-color: #9a9a9a
 
+	+r(992)
+		padding-top: 40px
+		padding-bottom: 30px
+
 	&__wrapper
 		display: flex
 		align-items: center
@@ -716,11 +862,7 @@ body
 		flex-direction: column
 
 	&__title
-		font-family: Raleway, sans-serif
-		text-transform: uppercase
 		color: #ffffff
-		font-size: 36px
-		font-weight: 500	
 
 		&::after
 			display: block
@@ -732,12 +874,18 @@ body
 			margin-top: 30px
 			margin-bottom: 30px
 
+			+r(992)
+				left: 150px
+
 	&__subtitle
 		color: #ffffff
 		font-size: 16px
 		margin-bottom: 80px
 		font-weight: 300
 		font-family: Raleway, sans-serif
+
+		+r(992)
+			margin-bottom: 40px
 
 	&__button	
 		width: 135px
@@ -759,6 +907,10 @@ body
 	padding-top: 110px
 	padding-bottom: 80px
 
+	+r(992)
+		padding-top: 50px
+		padding-bottom: 40px
+
 	&__container
 		width: 1130px
 
@@ -767,14 +919,12 @@ body
 		align-items: center
 		justify-content: space-between
 		flex-direction: column
-		width: 1130px
+		max-width: 1130px
+
+		+r(992)
+			width: 768px
 
 	&__title
-		font-family: Raleway, sans-serif
-		text-transform: uppercase
-		color: #212121
-		font-size: 36px
-		font-weight: 500	
 
 		&::after
 			display: block
@@ -786,10 +936,16 @@ body
 			margin-top: 30px
 			margin-bottom: 30px
 
+			+r(992)
+				left: 70px
+
 	&__subtitle
 		color: #86878b
 		font-size: 14px
 		margin-bottom: 95px
+
+		+r(992)
+			margin-bottom: 40px
 
 	&__row
 		display: flex
@@ -838,6 +994,11 @@ body
 		font-weight: 600
 		border-radius: 5px
 
+		+r(992)
+			width: 120px
+			height: 35px
+			font-size: 12px
+
 		&:hover
 			background-color: darken(#ff9b51,7.5%)
 			color: #ffffff
@@ -847,6 +1008,9 @@ body
 	padding-bottom: 15px
 	background-color: #000000
 
+	+r(992)
+		padding-top: 15px
+		padding-bottom: 10px
 
 	&__wrapper
 		display: flex
